@@ -1,3 +1,5 @@
+import { Card } from '../components/Card';
+
 export function Home() {
     return (
         <div className="space-y-6">
@@ -6,6 +8,10 @@ export function Home() {
                 This is your new React application with TypeScript and Tailwind
                 CSS.
             </p>
+
+            <section className="grid grid-cols-4 gap-4">
+                <Card title="a" children={''} />
+            </section>
         </div>
     );
 }
